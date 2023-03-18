@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Running</title>
+            <script>
+
+                document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector(".btn").addEventListener('click', function() {
+                let input = document.querySelector('.input')
+                if (input.value == "10 km") {
+                    document.querySelector('#answer').innerHTML = '55:26';
+                }
+                else if (input.value == "5 km") {
+                    document.querySelector('#answer').innerHTML = '24:45';
+                }
+                else if (input.value == "1 km") {
+                    document.querySelector('#answer').innerHTML = '3:50';
+                }
+                else {
+                    document.querySelector('#answer').innerHTML = 'Invalid Request';
+                }
+            });
+                });
+
+            </script>
+    </head>
+    <body>
+        <div class="Third-Header">
+            <h2>Running</h2>
+        </div>
+        <div class="Third-Prompter">
+             Other Pages:
+            <a class="second" href="https://ezrafast1-code50-98355910-pj6pv5gqgf65wj-8080.githubpreview.dev/index.html">Back Home</a>
+            , or
+            <a class="third" href="https://ezrafast1-code50-98355910-pj6pv5gqgf65wj-8080.githubpreview.dev/2nd.html">Personal Introduction</a>
+             , or
+            <a class="fourth" href="https://ezrafast1-code50-98355910-pj6pv5gqgf65wj-8080.githubpreview.dev/4th.html">Learning to Code with CS50</a>
+        </div>
+        <div class="Running-Information">
+            <p class="Running-Paragraph">
+                <b>One of my main hobbies is running. I do not run competitively, but that does not mean that I don't challenge myself! I usually end up running near l'Arc de Triomphe and the Champs Elysées, which are just across the river from Sorbonne University (Paris), where I am a full-time student. I have been running casually for several years now, so my times have become pretty tight, something that I am proud of. I believe that running is good for the body as well as the mind, because it keeps the body sharp while keeping the mind focused. It keeps the mind focused because it requires a lot of will-power and determination to complete a run everytime you start. Below this paragraph, there is a text box that you can use to request my 1km, 5km, and 10km personal bests. I hope you are impressed!</b>
+            </p>
+        </div>
+        <div class="PB-field">
+            <h3>Personal Best Times Request (1, 5, or 10 km)</h3>
+                <input type="text" class="input">
+                <!-- <button type="button" id="submitted" style="background-color: white;">Request</button>      THIS IS THE OLD BUTTON, THE NEW ONE IS PART OF BOOTSTRAP -->
+                <button type="button" class="btn btn-success">Request</button>
+                <p id="answer"></p>
+        </div>
+    </body>
+</html>

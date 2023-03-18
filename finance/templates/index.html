@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Index
+{% endblock %}
+
+{% block main %}
+            <table class="table tablestriped">
+                <thead>
+                    <tr>
+                        <th class="symbol">Symbol</th>
+                        <th class="name">Name</th>
+                        <th class="shares">Shares</th>
+                        <th class="price">Price</th>
+                        <th class="total">TOTAL</th>
+                    </tr>
+                </thead>
+               <tbody>
+                    {% for info in info %}
+                        <tr>
+                            <td> {{ info.symbol }} </td>
+                            <td> {{ info.stock_name }} </td>
+                            <td> {{ info.get("shares") }} </td>
+                            <td> {{ info.price | usd }}</td>
+                            <td> {{ (info.price * info.get("shares")) | usd }}</td>
+                        </tr>
+                        {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                        <td class="border-0 text-end"> {{ remaining_cash | usd }} </td>
+                    </tr>
+                    <tr>
+                        <td class="border-0 fw-bold text-end" colspan="4">TOTAL VALUE</td>
+                        <td class="border-0 w-bold text-end"> {{ total_value | usd }} </td>
+                    </tr>
+                </tfoot>
+            </table>
+{% endblock %}

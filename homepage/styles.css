@@ -1,0 +1,186 @@
+body {
+    background-color: #d3d3d3;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.header {
+    background-color: #ffa500;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+.Second-Header {
+    background-color: #ff0000;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+.Third-Header {
+    background-color: #013220;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+.Fourth-Header {
+    background-color: #800020;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    font-size: 48px;
+}
+
+.image {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 41%;
+    margin-top: 100px;
+}
+
+.Harvard-Image {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;
+    margin-top: 60px;
+}
+
+h2 {
+    font-family: 'Garamond', serif;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: 'Garamond', serif;
+    font-size: 48px;
+}
+
+.Introduction-Information {
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 40px;
+}
+
+.Intro-Paragraph {
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Running-Information {
+    margin-top: 90px;
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 40px;
+}
+
+.Running-Paragraph {
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Coding-Information {
+    margin-top: 90px;
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 40px;
+}
+
+.Coding-Paragraph {
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Prompter {
+    font-family: 'Monaco', monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Second-Prompter {
+    font-family: 'Monaco', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Third-Prompter {
+    font-family: 'Monaco', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Fourth-Prompter {
+    font-family: 'Monaco', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.second {
+    color: #ee4b2b;
+}
+
+.second:hover {
+    background-color: #d3d3d3;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.third {
+    color: #ffa500;
+}
+
+.third:hover {
+    background-color: #d3d3d3;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.fourth {
+    color: #800000
+}
+
+.fourth:hover {
+    background-color: #d3d3d3;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+#answer {
+    text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    font-size: 2.1rem;
+}
+
+.PB-field {
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
