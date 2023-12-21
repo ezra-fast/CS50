@@ -1,0 +1,15 @@
+sort1 uses: Bubble sort
+
+How do you know?: Sort1 performed the worst when timed to organize random50000.txt (High upper bound). However, it
+performed much better than sort3 when sorting sorted50000.txt because its "best case" lower limit is O(n),
+the fastest for a pre-sorted data set.
+
+sort2 uses: Merge sort
+
+How do you know?: Evidently merge sort as it outperformed the other two sorts in the random and reverse data sets.
+Also still performed well on the pre-sorted data set.
+
+sort3 uses: Selection sort
+
+How do you know?: Sort2 uses selection sort because it performed the worst on the pre-sorted data set, as its lower bound is
+O(n^2), which is much bigger than the other two sorts.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+
+            // TODO: Add code to check answers to questions
+
+            //This code deals with MCQ: (Complete).
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let cor = document.getElementById('cor');
+                cor.addEventListener('click', function() {
+                    cor.style.backgroundColor = 'green';
+                    document.getElementById('answerstatus').innerHTML = 'Correct!';
+                });
+
+                let inc = document.getElementById('inc');
+                inc.addEventListener('click', function() {
+                    inc.style.backgroundColor = 'red';
+                    document.getElementById('answerstatus').innerHTML = 'Incorrect';
+                });
+
+                let inc2 = document.getElementById('inc2');
+                inc2.addEventListener('click', function() {
+                    inc2.style.backgroundColor = 'red';
+                    document.getElementById('answerstatus').innerHTML = 'Incorrect';
+                });
+
+                let inc3 = document.getElementById('inc3');
+                inc3.addEventListener('click', function() {
+                    inc3.style.backgroundColor = 'red';
+                    document.getElementById('answerstatus').innerHTML = 'Incorrect';
+                });
+            });
+
+            //MCQ Portion Done Here.
+            //Free Response Portion Begins Here:
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+            document.querySelector('#submitted').addEventListener('click', function() {
+                let input = document.querySelector('input')
+                if (input.value == "Harvard") {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#answer2status').innerHTML = 'Correct!';
+                }
+                else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#answer2status').innerHTML = 'Incorrect';
+                }
+            });
+
+        });
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                    <h3>Which one of the following is cardiovascular exercise?</h3>
+                    <button id="inc" type="button" style="background-color: white;">Bench Press</button>
+                    <button id="cor" type="button" style="background-color: white;">Running</button>
+                    <button id="inc2" type="button" style="background-color: white;">Deadlift</button>
+                    <button id="inc3" type="button" style="background-color: white;">Dumbell Curl</button>
+
+                    <p id="answerstatus"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which post-secondary school is cs50 taught at?</h3>
+                <input type="text">
+                <button type="button" id="submitted" style="background-color: white;">Confirm Answer</button>
+
+                <p id="answer2status"></p>
+
+            </div>
+        </div>
+    </body>
+</html>
